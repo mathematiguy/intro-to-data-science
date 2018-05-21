@@ -1,38 +1,202 @@
 ---
 title: "Intro to Data Science"
-author: Caleb Moses
-date: 23 May 2018
-output:
-  revealjs::revealjs_presentation:
-    css: dragonfly.css
-    transition: slide
-    reveal_options:
-      slideNumber: true
-      previewLinks: true
+author: "Caleb Moses"
+date: "`r format(Sys.time(), '%B %d, %Y')`"
+output: ioslides_presentation
+logo: images/dragonfly-logo-rgb.png
+css: dragonfly.css
+font-family: 'Helvetica'
 ---
 
-<!-- Ideas here: https://github.com/rstudio/revealjs -->
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
 
-# In the morning
+# Tēnā koutou
 
-## Getting up
+## {.fullslide}
+```{r, out.height = "700px"}
+knitr::include_graphics("images/waima.png")
+```
 
-- Turn off alarm
-- Get out of bed
+## {.fullslide}
+```{r, out.height = "700px"}
+knitr::include_graphics("images/whakatere-manawa-kaiaia.png")
+```
 
-## Breakfast
+## {.fullslide}
+```{r, out.height = "700px"}
+knitr::include_graphics("images/waima-river.png")
+```
 
-- Eat eggs
-- Drink coffee
+## {.fullslide}
+```{r, out.height = "700px"}
+knitr::include_graphics("images/marae.png")
+```
 
-# In the evening
+## {.fullslide}
+```{r, out.height = "700px"}
+knitr::include_graphics("images/kura.png")
+```
 
-## Dinner
+# Overview
 
-- Eat spaghetti
-- Drink wine
+## Overview
 
-## Going to sleep
+- What is Data Science?
+    - Common Topics
+    - Tools I use
+- Intro to Machine Learning
+    - Types of learning
+    - Practical ML
+- Getting started with Python
+- Q & A
 
-- Get in bed
-- Count sheep
+# What is Data Science?
+
+## Data Science is:
+
+From wikipedia:
+
+> "Data science is an interdisciplinary field of scientific methods, processes, algorithms and systems to extract knowledge or insights from data in various forms"
+
+Data science can cover any or all of the following:
+
+- Data visualisation
+- Statistical modelling
+- Machine learning
+- Automation of data-related processes
+- Big data/Distributed computing
+
+## Multidisciplinary
+
+```{r, out.height = "500px", fig.align = "center"}
+knitr::include_graphics("images/data-science-venn.png")
+```
+
+## Technical
+
+```{r, out.height = "500px", fig.align = "center"}
+knitr::include_graphics("images/data-science-venn-2.png")
+```
+
+# Tools for Data Science
+
+## Languages
+
+- The most popular programming languages for data science are `Python` and `R`.
+- Some flavour of `SQL` is also often necessary
+- For big data, `Scala` is popular (but `Python`/`R` can do big data too)
+- Learn `git`! Github is also awesome
+
+If you want a recommendation, I'd say `Python` (but this is a matter of opinion).
+
+```{r, out.height = "200px", fig.align = "center"}
+knitr::include_graphics("images/r-vs-python.jpg")
+```
+
+## In Python
+
+In Python, the most common tools are these:
+
+- `Anaconda` is the python distribution I use
+- `Jupyter Notebooks`/`Jupyter Lab` is the IDE I use  
+- For data manipulation, I use `pandas`
+- For machine learning, I use `scikit-learn`
+- For deep learning, I use `tensorflow` and `keras`
+- For big data, I use `pyspark` or increasingly `dask`
+- For data visualisation, I use `matplotlib`, `seaborn`, `bokeh` or `plotly`
+
+Also noteworthy: `scrapy` for web scraping, and `spacy` for natural language processing
+
+# Machine Learning
+
+## What is machine learning?
+
+From wikipedia (edited):
+
+> Machine learning is a sub-field of computer science and statistics which aims to give computers the ability to progressively improve performance on a specific task with data, without being explicitly programmed.
+
+When it works, the idea is:
+
+- Collect a lot of data about a problem
+- Point an pattern finding algorithm at the data
+- ...?
+- Profit
+
+<!-- Machine learning (or 'ML') is a quickly growing and diverse field. -->
+
+<!-- At the cutting edge, things are changing fast, but older, popular techniques can still perform well on many problem domains. -->
+
+## How does a machine learn?
+
+```{r, out.width = "750px", fig.align = "center"}
+knitr::include_graphics("images/supervised-learning.jpg")
+```
+
+<div class="centered">
+Supervised learning
+</div>
+
+## How does a machine learn?
+
+```{r, out.height = "400px", fig.align = "center"}
+knitr::include_graphics("images/unsupervised-learning.png")
+```
+
+<div class="centered">
+Unsupervised learning
+</div>
+
+## How does a machine learn?
+
+```{r, out.width = "750px", fig.align = "center"}
+knitr::include_graphics("images/reinforcement-learning.jpg")
+```
+
+<div class="centered">
+Reinforcement learning
+</div>
+
+# Modern Machine Learning
+
+## Feature engineering
+
+```{r, out.height = "400px", fig.align = "center"}
+knitr::include_graphics("images/deepblue.png")
+```
+
+<!-- <div class="centered"> -->
+<!-- Old and busted -->
+<!-- </div> -->
+
+## Deep Learning
+
+```{r, out.height = "400px", fig.align = "center"}
+knitr::include_graphics("images/alphago.png")
+```
+
+<!-- <div class="centered"> -->
+<!-- New hotness -->
+<!-- </div> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
